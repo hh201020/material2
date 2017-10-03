@@ -8,22 +8,6 @@ import { MatMenuTrigger } from '@angular/material';
   styleUrls: ['local-contextmenu.css'],
 })
 export class LocalContextMenuDemo {
-  selected = '';
-  items = [
-    {text: 'Ref'},
-    {text: 'Set'},
-    {text: 'Hel', disabled: true},
-    {text: 'Sig'}
-  ];
-
-  iconItems = [
-    {text: 'Red', icon: 'dialpad'},
-    {text: 'Che', icon: 'voicemail', disabled: true},
-    {text: 'Dis', icon: 'notifications_off'}
-  ];
-
-  select(text: string) { this.selected = text; }
-
   @ViewChild(MatMenuTrigger) contextMenu: MatMenuTrigger;
 
   openContextMenu(event) {
