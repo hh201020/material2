@@ -8,7 +8,6 @@ import {EntryApp} from './demo-app/demo-app';
 import {DemoModule} from './demo-app/demo-module';
 import {AccessibilityDemoModule} from './a11y/a11y-module';
 
-
 @NgModule({
   imports: [
     BrowserModule,
