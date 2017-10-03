@@ -60,6 +60,7 @@ export class DemoApp {
     {name: 'List', route: '/list'},
     {name: 'Live Announcer', route: '/live-announcer'},
     {name: 'Local Contextmenu', route: '/local-contextmenu'},
+    {name: 'Local Contextmenu Table', route: '/local-contextmenu-table'},
     {name: 'Menu', route: '/menu'},
     {name: 'Overlay', route: '/overlay'},
     {name: 'Platform', route: '/platform'},
