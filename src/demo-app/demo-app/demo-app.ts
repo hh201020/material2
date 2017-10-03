@@ -59,6 +59,7 @@ export class DemoApp {
     {name: 'Input', route: '/input'},
     {name: 'List', route: '/list'},
     {name: 'Live Announcer', route: '/live-announcer'},
+    {name: 'Local Contextmenu', route: '/local-contextmenu'},
     {name: 'Menu', route: '/menu'},
     {name: 'Overlay', route: '/overlay'},
     {name: 'Platform', route: '/platform'},
@@ -80,7 +81,7 @@ export class DemoApp {
     {name: 'Tooltip', route: '/tooltip'},
     {name: 'Typography', route: '/typography'}
   ];
-
+  
   constructor(
     private _element: ElementRef,
     private _renderer: Renderer2,

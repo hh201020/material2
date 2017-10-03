@@ -20,6 +20,7 @@ import {InputDemo} from '../input/input-demo';
 import {ListDemo} from '../list/list-demo';
 import {LiveAnnouncerDemo} from '../live-announcer/live-announcer-demo';
 import {MenuDemo} from '../menu/menu-demo';
+import {LocalContextMenuDemo} from '../local-contextmenu/local-contextmenu';
 import {OverlayDemo} from '../overlay/overlay-demo';
 import {PlatformDemo} from '../platform/platform-demo';
 import {PortalDemo} from '../portal/portal-demo';
@@ -64,6 +65,7 @@ export const DEMO_APP_ROUTES: Routes = [
     {path: 'list', component: ListDemo},
     {path: 'live-announcer', component: LiveAnnouncerDemo},
     {path: 'menu', component: MenuDemo},
+    {path: 'local-contextmenu', component: LocalContextMenuDemo},
     {path: 'overlay', component: OverlayDemo},
     {path: 'platform', component: PlatformDemo},
     {path: 'portal', component: PortalDemo},

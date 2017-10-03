@@ -23,6 +23,7 @@ import {InputDemo} from '../input/input-demo';
 import {ListDemo} from '../list/list-demo';
 import {LiveAnnouncerDemo} from '../live-announcer/live-announcer-demo';
 import {MenuDemo} from '../menu/menu-demo';
+import {LocalContextMenuDemo} from '../local-contextmenu/local-contextmenu';
 import {OverlayDemo, RotiniPanel, SpagettiPanel} from '../overlay/overlay-demo';
 import {PlatformDemo} from '../platform/platform-demo';
 import {PortalDemo, ScienceJoke} from '../portal/portal-demo';
@@ -84,6 +85,7 @@ import {DEMO_APP_ROUTES} from './routes';
     LiveAnnouncerDemo,
     MatCheckboxDemoNestedChecklist,
     MenuDemo,
+    LocalContextMenuDemo,
     OverlayDemo,
     PlatformDemo,
     PortalDemo,
