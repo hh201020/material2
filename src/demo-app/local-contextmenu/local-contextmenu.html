@@ -1,6 +1,6 @@
 <div>
   <div>  
-    <button md-button [matMenuTriggerFor]="contextMenu" (contextmenu)="openContextMenu($event)">Context Menu</button>
+    <span md-button [matMenuTriggerFor]="contextMenu" (contextmenu)="openContextMenu($event)">Context Menu</span>
 
     <mat-menu #contextMenu="matMenu">
       <button md-menu-item>Item 1</button>
