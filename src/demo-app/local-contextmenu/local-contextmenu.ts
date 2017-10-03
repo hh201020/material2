@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-
+import {Component, ViewChild} from '@angular/core';
+import { MatMenuTrigger } from '@angular/material';
 
 @Component({
   moduleId: module.id,
@@ -23,4 +23,11 @@ export class LocalContextMenuDemo {
   ];
 
   select(text: string) { this.selected = text; }
+
+  @ViewChild(MatMenuTrigger) contextMenu: MatMenuTrigger;
+
+  openContextMenu(event) {
+    event.preventDefault();
+    this.contextMenu.openMenu();
+  }
 }

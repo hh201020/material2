@@ -3,6 +3,8 @@ import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
+import {MatMenuModule} from '@angular/material';
+
 import {AutocompleteDemo} from '../autocomplete/autocomplete-demo';
 import {BaselineDemo} from '../baseline/baseline-demo';
 import {ButtonToggleDemo} from '../button-toggle/button-toggle-demo';
@@ -57,6 +59,7 @@ import {DEMO_APP_ROUTES} from './routes';
     RouterModule.forChild(DEMO_APP_ROUTES),
     DemoMaterialModule,
     LayoutModule,
+    MatMenuModule,    
   ],
   declarations: [
     AutocompleteDemo,
