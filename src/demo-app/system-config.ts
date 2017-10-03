@@ -26,7 +26,8 @@ System.config({
       'node:@angular/platform-browser/bundles/platform-browser.umd.js',
     '@angular/platform-browser-dynamic':
       'node:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
-
+    '@swimlane/ngx-datatable': 'node:@swimlane/ngx-datatable/release/index.js',   
+      
     // TODO(devversion): replace once the index.ts file for the Material package has been added.
     '@angular/material': 'dist/packages/material/public-api.js',
     '@angular/cdk': 'dist/packages/cdk/index.js',

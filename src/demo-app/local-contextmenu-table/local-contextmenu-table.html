@@ -1,4 +1,11 @@
 <div>
+  <div>
+    <ngx-datatable
+      [rows]="rows"
+      [columns]="columns">
+    </ngx-datatable>
+  </div>
+
   <div>  
     <span md-button [matMenuTriggerFor]="contextMenu" (contextmenu)="openContextMenu($event)">Context Menu</span>
 

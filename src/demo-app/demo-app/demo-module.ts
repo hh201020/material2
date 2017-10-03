@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import {MatMenuModule} from '@angular/material';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 import {AutocompleteDemo} from '../autocomplete/autocomplete-demo';
 import {BaselineDemo} from '../baseline/baseline-demo';
@@ -60,7 +61,8 @@ import {DEMO_APP_ROUTES} from './routes';
     RouterModule.forChild(DEMO_APP_ROUTES),
     DemoMaterialModule,
     LayoutModule,
-    MatMenuModule,    
+    MatMenuModule,
+    NgxDatatableModule,        
   ],
   declarations: [
     AutocompleteDemo,
