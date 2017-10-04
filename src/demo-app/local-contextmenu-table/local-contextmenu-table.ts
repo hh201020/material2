@@ -10,17 +10,21 @@ import { MatMenuTrigger } from '@angular/material';
 export class LocalContextMenuTableDemo {
   @ViewChild(MatMenuTrigger) contextMenu: MatMenuTrigger;
 
-  //@Input() 
   row: any;
   @Output() clickedItem = new EventEmitter<string>();
 
   clickName(item: string) {
-    console.log(this.row.name);
+    console.log(item + this.row.name);
     this.clickedItem.emit(item);
   }
 
   clickGender(item: string) {
-    console.log(this.row.gender);
+    console.log(item + this.row.gender);
+    this.clickedItem.emit(item);
+  }
+
+  clickCompany(item: string) {
+    console.log(item + this.row.company);
     this.clickedItem.emit(item);
   }
 
@@ -28,9 +32,6 @@ export class LocalContextMenuTableDemo {
     this.row = row;
     console.log(this.row);
     console.log(event);
-
-    //event.preventDefault();
-    //this.contextMenu.openMenu();
   }
 
   rows = [
@@ -39,7 +40,7 @@ export class LocalContextMenuTableDemo {
     { name: 'Molly', gender: 'Female', company: 'Burger King' },
   ];
   columns = [
-    { prop: 'name' },
+    { prop: 'Name' },
     { name: 'Gender' },
     { name: 'Company' }
   ];
