@@ -1,49 +1,42 @@
 <div>
   <div>
-    <ngx-datatable
-      [rows]="rows"
-      [columns]="columns">
+    <ngx-datatable [rows]="rows" [columns]="columns">
 
-    <ngx-datatable-column
-      [width]="50"
-      [resizeable]="false"
-      [sortable]="false"
-      [draggable]="false"
-      [canAutoResize]="false">
-      <ng-template let-row="row" ngx-datatable-cell-template>
-        <button class="btn" [matMenuTriggerFor]="contextMenu" 
-          title="Expand/Collapse Row">...
-        </button>
-      </ng-template>
-    </ngx-datatable-column>
+      <ngx-datatable-column [width]="80" [resizeable]="false" [sortable]="false" [draggable]="false" [canAutoResize]="false">
+        <ng-template let-row="row" ngx-datatable-cell-template>
+          <button class="btn" [matMenuTriggerFor]="contextMenu" (click)="openContextMenu($event, row)">Actions</button>
+        </ng-template>
+      </ngx-datatable-column>
 
-    <ngx-datatable-column name="name" width="100">
-      <ng-template let-value="value" ngx-datatable-cell-template>
-        <strong>{{value}}</strong>
-      </ng-template>
-    </ngx-datatable-column>
+      <ngx-datatable-column name="name" width="100">
+        <ng-template let-value="value" ngx-datatable-cell-template>
+          <strong>{{value}}</strong>
+        </ng-template>
+      </ngx-datatable-column>
 
-    <ngx-datatable-column name="gender" width="150">
-      <ng-template let-value="value" ngx-datatable-cell-template>
-        <strong>{{value}}</strong>
-      </ng-template>
-    </ngx-datatable-column>
+      <ngx-datatable-column name="gender" width="150">
+        <ng-template let-value="value" ngx-datatable-cell-template>
+          <strong>{{value}}</strong>
+        </ng-template>
+      </ngx-datatable-column>
 
       <ngx-datatable-column name="company" width="50">
         <ng-template let-value="value" ngx-datatable-cell-template>
           <strong>{{value}}</strong>
         </ng-template>
       </ngx-datatable-column>
-  
+
     </ngx-datatable>
   </div>
 
-  <div>  
-    <span md-button [matMenuTriggerFor]="contextMenu" (contextmenu)="openContextMenu($event)">Context Menu</span>
-
-    <mat-menu #contextMenu="matMenu">
-      <button md-menu-item>Item 1</button>
-      <button md-menu-item>Item 2</button>
-    </mat-menu>
-  </div>
+  <mat-menu #contextMenu="matMenu">
+    <ul>
+      <li>
+        <button md-menu-item (click)="clickName('Item 1 of Menu ')">Menu: Item 1</button>
+      </li>
+      <li>
+        <button md-menu-item (click)="clickGender('Item 2 of Menu ')">Menu: Item 2</button>
+      </li>
+    </ul>
+  </mat-menu>
 </div>
